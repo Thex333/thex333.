@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./styles.css">
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./contact.css" />
+        <title>Contact</title>
+    </head>
+    <body>
+     
+             <section class="contact-main">
+      <nav>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">  <label  id="dark-change"></label></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active-link">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="./l.html" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Sign in</span>
+                            </a>
+                        </li>
+                               <li class="nav__item">
+                            <a href="./game.html"class="nav__link">
+                                <i class='bx bx-book-alt nav__icon'></i>
+                                <span class="nav__name">Project 1</span>
+                            </a>
+                        </li>
+  <li class="nav__item">
+                            <a href="https://thex333.github.io/the25april.-/" class="nav__link">
+                                <i class='bx bx-book-alt nav__icon'></i>
+                                <span class="nav__name">Project 2</span>
+                            </a>
+                        </li
+
+                        <li class="nav__item">
+                            <a href="C.html" class="nav__link">
+                                <i class='bx bx-message-square-detail nav__icon'></i>
+                                <span class="nav__name">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <img src="./p.png" alt="" class="nav__img">
+            </nav>
+        </header>
+
+        <main>
+            <!--=============== HOME ===============-->
+              <div class="contact-main-text">
+        <h1>Our teams are here to help</h1>
+        <p>
+          Get in touch and let us know how we can help. We’ll help you combine
+          the flexibility of the modern web with the control and compliance your
+          business needs.
+        </p>
+        <a href="#contact">Need help?</a>
+      </div>
+    </section>
+
+    <section class="contact-form" id="contact">
+      <h1>Contact us directly</h1>
+        <form action="https://formspree.io/f/xvolzkew" method="POST" class="box">
+        <header>Contact Us </header>
+
+        <div class="inputBox">
+            <!-- NOTE! -> Name is required without it wont work -->
+            <input name="Name" type="text" id="nameBox" placeholder="Your Name..." autocomplete="off" required>
+        </div>
+        <div class="inputBox">
+            <input name="Email" type="email" id="mailbox" placeholder="Email..." autocomplete="off" required>
+        </div>
+
+        <textarea name="Message" class="msgBox" placeholder="Message..." autocomplete="off" required></textarea>
+        <!-- Nice ??? comment below ur suggestions :) -->
+
+        <!-- wrap it in a div -->
+        <div class="button-container">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+
+      <div class="social-medias">
+        <h3>& contact us on social media</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=100041951295866"><i class="fa fa-facebook"></i>Facebook</a></li>
+            <li><a href="https://github.com/Thex333"><i class="fa fa-github"></i>Github</a></li>
+          <li><a href="https://www.instagram.com/tv/CX1PrshF5o4/?utm_medium=copy_link"><i class="fa fa-instagram"></i>Instagram</a></li>
+          <li><a href="https://youtu.be/rzJOvKRBTcU"><i class="fa fa-youtube"></i>YouTube</a></li>
+          <li><a href="mailto:eszthex@gmail.com"><i class="fa fa-envelope"></i>Email</a></li>
+        </ul>
+      </div>
+        <div   class="copyright">
+        &copy; All rights reserved by Thex333 & Made with &hearts; By Tushar
+    </div>
+    </section>
+
+    <script src="./navbar.js"></script>
+  </body>
+</html>
+
+   
+              <style>
+        body{
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+        }
+        main{
+          margin: 5vh 15%;
+        }
+        h1{
+          font-size: 40px;
+          font-weight: 400;
+          text-align: center;
+        }
+        img{
+          width:50%;
+          height:auto;
+        }
+        p{
+          text-align: justify;
+          font-size: 18px;
+        }
+        label{
+            position: absolute;
+            width: 45px;
+            height: 22px;
+            left: 20px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+        label:before{
+            position: absolute;
+            content: '';
+            width:20px;
+            height: 20px;
+            left: -1px;
+            top: -1px;
+            border-radius: 50%;
+            background: #000;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        label.active:before{
+            left: 22px;
+            background: #fff;
+        }
+        body.night{
+            background: #000;
+            color: #fff;
+        }
+        @media screen and (min-width:900px) {
+          .respon{
+            display: flex;
+          }
+          img{
+            height:50%;
+            width:auto;
+            padding-top: 3vh;
+            padding-left: 5%;
+          }
+          p{
+            max-width: 80%;
+            line-height: 30px;
+          }
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <label  id="dark-change"></label>
+  </header>
+  <main>
+   
+  </main>
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="./main.js"></script>
+    </body>
+</html>

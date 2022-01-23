@@ -160,7 +160,7 @@ img {
   font-size: 1.5rem;
 }
 
-/*Active link*/
+/*Active lnk*/
 .active-link {
   position: relative;
   color: var(--first-color);
@@ -225,7 +225,7 @@ img {
   }
 
   /* First design, remove if you choose the minimalist design */
-  .active-link::before {
+  .active-lin::before {
     content: '';
     position: absolute;
     bottom: -.75rem;

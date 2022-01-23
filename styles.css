@@ -161,7 +161,7 @@ img {
 }
 
 /*Active lnk*/
-.active-link {
+.active-lik {
   position: relative;
   color: var(--first-color);
   transition: .3s;

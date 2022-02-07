@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Best Python Projects</title>
+    <link rel="stylesheet" href="sty.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="text-boxes">
+    <div class="text-box HTMLBox">
+      <div class="topic">Audiobook code:</div>
+      <textarea id="HTMLBox" readonly >
+        import pyttsx3
+import PyPDF2
+book = open('oop.pdf', 'rb')
+pdfReader = PyPDF2.PdfFileReader(book)
+pages = pdfReader.numPages
+
+speaker = pyttsx3.init()
+for num in range(7, pages):
+    page = pdfReader.getPage(num)
+    text = page.extractText()
+    speaker.say(text)
+    speaker.runAndWait()
+      </textarea>
+      <button id="HTMLButton">Copy Codes</button>
+    </div>
+    <div class="text-box CSSBox">
+      <div class="topic">Guessing Game Code:</div>
+      <textarea id="CSSBox" readonly >
+        import random
+randNumber = random.randint(1, 100)
+userGuess = None
+guesses = 0
+
+while(userGuess != randNumber):
+    userGuess = int(input("Enter your guess: "))
+    guesses += 1
+    if(userGuess==randNumber):
+        print("You guessed it right!")
+    else:
+        if(userGuess>randNumber):
+            print("You guessed it wrong! Enter a smaller number")
+        else:
+            print("You guessed it wrong! Enter a larger number")
+
+print(f"You guessed the number in {guesses} guesses")
+with open("hiscore.txt", "r") as f:
+    hiscore = int(f.read())
+
+if(guesses<hiscore):
+    print("You have just broken the high score!")
+    with open("hiscore.txt", "w") as f:
+        f.write(str(guesses))
+
+      </textarea>
+      <button id="CSSButton">Copy Codes</button>
+    </div>
+    <div class="text-box JSBox">
+      <div class="topic">Weather app code:</div>
+      <textarea id="JSBox" readonly >
+        # Importing Packages
+import weather_forecast as wf
+
+# Taking user's location as an input
+location=input("Enter Location Here :")
+#Author: Coderx
+print('Displaying Weather report for: ' + location)
+
+# Retriving the data using .forecast() method
+Weather= wf.forecast(place = location)
+
+# Printing the final results
+print(Weather)
+      </textarea>
+      <button id="JSButton">Copy Codes</button>
+    </div>
+  </div>
+
+  <script>
+  // HTML BOx JS Code
+    let HTMLBox = document.getElementById("HTMLBox");
+    let HTMLButton = document.getElementById("HTMLButton");
+
+    HTMLButton.onclick = function() {
+      HTMLBox.select();
+      document.execCommand("copy");
+      HTMLButton.innerText = "Codes Copied"
+    }
+
+    // CSS Box Js Code
+      let CSSBox = document.getElementById("CSSBox");
+      let CSSButton = document.getElementById("CSSButton");
+
+      CSSButton.onclick = function() {
+        CSSBox.select();
+        document.execCommand("copy");
+        CSSButton.innerText = "Codes Copied"
+      }
+    // JavaScript BOx JS Code
+      let JSBox = document.getElementById("JSBox");
+      let JSButton = document.getElementById("JSButton");
+
+      JSButton.onclick = function() {
+        JSBox.select();
+        document.execCommand("copy");
+        JSButton.innerText = "Codes Copied"
+      }
+  </script>
+
+
+</body>
+</html>
